@@ -254,3 +254,9 @@ variable "auto_minor_version_upgrade" {
   default     = null
   description = "Specifies whether minor version engine upgrades will be applied automatically to the underlying Cache Cluster instances during the maintenance window. Only supported if the engine version is 6 or higher."
 }
+
+variable "parameter_group_suffix" {
+  type        = string
+  default     = null
+  description = "Override the default parameter group name suffix"
+}
